@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #517c8e;
+        height: 100%;
+        width: 100%;
+      }
+      table {
+        border-radius: 5px;
+        border: 20px solid black;
+        background-color: aliceblue;
+      }
+      #header {
+        background-color: #9eb0c4;
+      }
+      #label {
+        font-size: 17px;
+        font-weight: 500;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: #56cbae;
+      }
+      input {
+        height: 20px;
+        font-size: 10px;
+      }
+      #box {
+        width: 10px;
+        height: 10px;
+      }
+      #email {
+        width: 97%;
+      }
+      #radio_btn {
+        font-size: 13px;
+      }
+      #bio {
+        width: 97%;
+      }
+      #header button{
+        float: right;
+        margin: 10px;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <form action="">
+        <table cellpadding="5">
+          <tr align="center">
+            <td colspan="2" id="header"><h1>Create Account</h1></td>
+          </tr>
+          <tr>
+            <td>
+              <label for="First_Name" id="label">First Name*</label><br />
+              <input
+                type="text"
+                name="First_Name"
+                id="first_name"
+                placeholder="Enter your first name"
+              />
+            </td>
+            <td>
+              <label for="Last_Name" id="label">Last Name</label><br />
+              <input
+                type="text"
+                name="Last_Name"
+                id="last_name"
+                placeholder="Enter your last name"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <label for="Email" id="label">Email*</label><br />
+              <input
+                type="email"
+                name="Email"
+                id="email"
+                placeholder="Enter your email"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="Password" id="label">Password*</label><br />
+              <input
+                type="password"
+                name="Password"
+                size="25px"
+                id="password"
+                placeholder="Enter your password"
+              />
+            </td>
+            <td>
+              <label for="Confirm_Password" id="label">Confirm Password*</label
+              ><br />
+              <input
+                type="password"
+                size="25px"
+                name="Confirm_Password"
+                id="confirm_password"
+                placeholder="Enter your password again"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="Gender" id="label">Gender</label><br />
+              <input type="radio" name="gender" id="box" value="Male" /><label
+                for="Male"
+                id="radio_btn"
+                >Male</label
+              >
+              <input type="radio" name="gender" id="box" value="Female" /><label
+                for="Female"
+                id="radio_btn"
+                >Female</label
+              >
+            </td>
+            <td>
+              <label for="Hobbies" id="label">Hobbies</label><br />
+              <input
+                type="checkbox"
+                name="hobbies"
+                id="box"
+                value="Music"
+              /><label for="Music" id="radio_btn">Music</label>
+              <input
+                type="checkbox"
+                name="hobbies"
+                id="box"
+                value="Sport"
+              /><label for="Sport" id="radio_btn">Sport</label>
+              <input
+                type="checkbox"
+                name="hobbies"
+                id="box"
+                value="Travel"
+              /><label for="Travel" id="radio_btn">Travel</label>
+              <input
+                type="checkbox"
+                name="hobbies"
+                id="box"
+                value="Movies"
+              /><label for="Movies" id="radio_btn">Movies</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="Income_Source" id="label">Source of Income</label
+              ><br />
+              <select name="Income_Source" id="income_source">
+                <option value="Employed">Employed</option>
+                <option value="Self - Employed">Self - Employed</option>
+                <option value="Unemployed">Unemployed</option>
+              </select>
+            </td>
+            <td>
+              <label for="Income" id="label">Income</label><br />
+              <input type="range" name="Income" id="Income" slot="20K" oninput="document.getElementById('income_value').innerHTML=this.value"/>
+              <slot id="income_value">20k</slot>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="Profile_Picture" id="label"
+                >Upload Profile Picture</label
+              ><br />
+              <input type="file" name="Profile_Picture" id="profile_picture" />
+            </td>
+            <td>
+              <label for="Age" id="label">Age</label><br />
+              <input
+                type="number"
+                name="Age"
+                id="age"
+                max="100"
+                min="16"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <label for="Bio" id="label">Bio</label><br />
+              <textarea name="Bio" id="bio"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <tr>
+              <td colspan="2" id="header">
+                <button>Click</button>
+              </td>
+            </tr>
+          </tr>
+        </table>
+      </form>
+    </center>
+  </body>
+</html>

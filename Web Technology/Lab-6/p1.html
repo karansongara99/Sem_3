@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        background-color: black;
+        height: 50vh;
+        /* width: 100%; */
+        position: relative;
+        overflow: hidden;
+      }
+
+      .round {
+        position: absolute;
+        height: 10vh;
+        width: 5%;
+        border-radius: 50%;
+        background-color: red;
+        animation-name: move;
+        animation-duration: 4s;
+        animation-duration: reverse;
+        animation-delay: 5s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+        animation-timing-function: calc(100%);
+      }
+
+      @keyframes move {
+        0% {
+          top: 0px;
+          left: 0px;
+        }
+
+        25% {
+          top: 0px;
+          left: 95%;
+        }
+
+        50% {
+          top: 40vh;
+          left: 95%;
+        }
+
+        75% {
+          top: 40vh;
+          left: 0px;
+        }
+
+        100% {
+          top: 0px;
+          left: 0px;
+          background-color: yellow;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="round"></div>
+    </div>
+  </body>
+</html>

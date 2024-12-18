@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header {
+            height: 12vh;
+            width: 100%;
+            background-color: red;
+            color: wheat;
+            align-content: center;
+            text-align: center;
+            justify-content: center;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .main {
+            overflow: hidden;
+        }
+
+        .navigation {
+            background-color: rgb(122, 63, 205);
+            color: black;
+            font-size: 30px;
+            align-content: center;
+            text-align: center;
+            justify-content: center;
+            width: 20%;
+            height: 70vh;
+            float: left;
+        }
+
+        .content {
+            background-color: rgb(229, 255, 0);
+            width: 79%;
+            height: 70vh;
+            font-size: 30px;
+            float: right;
+            color: #000;
+            text-align: center;
+            justify-content: center;
+            position: relative;
+            align-content: center;
+        }
+
+        .sidebar {
+            background-color: rgb(0, 255, 30);
+            color: #000;
+            position: absolute;
+            border-bottom: 20px solid white;
+            border-left: 20px solid white;
+            text-align: center;
+            justify-content: center;
+            top: 0%;
+            right: 0%;
+            width: 20%;
+            height: 50vh;
+            float: right;
+            align-content: center;
+        }
+
+        .footer {
+            height: 12vh;
+            width: 100%;
+            background-color: rgb(32, 196, 218);
+            color: wheat;
+            text-align: center;
+            justify-content: center;
+            font-size: 30px;
+            margin-top: 10px;
+            align-content: center;
+        }
+    </style>
+</head>
+
+<body>
+        <div class="header">Header</div>
+        <div class="main">
+            <div class="navigation">Navigation</div>
+            <div class="content">
+                Content
+                <div class="sidebar">
+                    Sidebar
+                </div>
+            </div>
+        </div>
+        <div class="footer">Footer</div>
+</body>
+
+</html>

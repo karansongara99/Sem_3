@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Practical-1</title>
+  <style>
+    body {
+      margin: 10px;
+      padding: 20px;
+    }
+
+    tr,
+    td {
+      padding: auto;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    label:hover {
+      background-color: #e41212;
+      font-weight: 400;
+    }
+
+    #btn {
+      align-items: center;
+      background-color: rgb(120, 206, 28);
+    }
+
+    #btn:hover {
+      color: rgb(21, 83, 184);
+    }
+
+    fieldset {
+      border: 2px solid black;
+    }
+  </style>
+</head>
+
+<body bgcolor="lightcyan">
+  <center>
+    <fieldset>
+      <legend>Student Registration Form</legend>
+      <form method="get">
+        <table>
+          <tr>
+            <td><label>Enter Name:</label></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td><label>Enter Email:</label></td>
+            <td><input type="email" /></td>
+          </tr>
+          <tr>
+            <td><label>Enter Mobile No:</label></td>
+            <td><input type="tel" maxlength="10" required /></td>
+          </tr>
+          <tr>
+            <td><label>Enter Address:</label></td>
+            <td><textarea name="" id="" cols="21" rows="4"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Enter Nationality:</label></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td><label>Enter DOB:</label></td>
+            <td><input type="date" /></td>
+          </tr>
+          <tr>
+            <td><label>Enter Gender:</label></td>
+            <td>
+              <input type="radio" id="gmale" name="gender" value="Male" />
+                <label>Male</label>
+              <input type="radio" id="gmale" name="gender" value="Female" />  
+              <label>Female</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Enter Highest Degree:</label></td>
+            <td>
+              <select name="city-names" id="city-names">
+                <option value="Highest Degree" disabled selected>
+                  Highest Degree
+                </option>
+                <option value="bca">BCA</option>
+                <option value="btech">B.TECH</option>
+                <option value="bsc">B.SC</option>
+                <option value="diploma">DIPLOMA</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label>CPI:</label></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td><label>University:</label></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td><label>Passing Year</label></td>
+            <td>
+              <select name="pass-year" id="pass-year">
+                <option value="Select Your Passing Year" disabled selected>
+                  Select Your Passing Year
+                </option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="button" value="Submit" id="btn" />
+              <input type="button" value="Cancel" id="btn" />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </fieldset>
+  </center>
+</body>
+
+</html>

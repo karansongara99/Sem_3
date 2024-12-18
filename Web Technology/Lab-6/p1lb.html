@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            position: relative;
+            font-size: 30px;
+            animation-name: ani1;
+            animation-duration: 2s;
+            animation-delay: 2s;
+            color: antiquewhite;
+            background-color: black;
+            animation-iteration-count: 2;
+        }
+
+        .box {
+            position: relative;
+            height: 15vh;
+            background-color: blueviolet;
+            width: 15vh;
+            margin: 5%;
+            animation-name: ani2;
+            animation-duration: 3s;
+        }
+
+        @keyframes ani1 {
+            0% {
+                top: 0%;
+                background-color: red;
+                left: 0%;
+            }
+
+            25% {
+                top: 0px;
+                left: 100px;
+            }
+
+            50% {
+                top: 0px;
+                left: 0px;
+            }
+
+            75% {
+                top: 0px;
+                left: 0px;
+            }
+
+            100% {
+                top: 0px;
+                left: 0px;
+                background-color: aqua;
+            }
+        }
+
+        @keyframes ani2 {
+            0% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: yellow;
+                left: 200px;
+                top: 0px;
+            }
+
+            50% {
+                background-color: blue;
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                background-color: green;
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p>Hello Welcome to My Website</p>
+    <div class="box"></div>
+</body>
+
+</html>

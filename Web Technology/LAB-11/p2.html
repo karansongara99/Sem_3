@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <style>
+      .container {
+        width: 500px;
+        height: 300px;
+        background-color: rgb(149, 92, 18);
+        padding: 10px;
+        margin-left: 500px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        border: 2px solid black;
+      }
+      table {
+        padding: 10px;
+        margin: 10px;
+      }
+      h1 {
+        text-align: center;
+      }
+      label {
+        margin: 25px;
+        font-size: 20px;
+      }
+      input[type="submit"] {
+        margin: 20px;
+        font-size: 15px;
+        justify-content: center;
+        text-align: center;
+        align-content: center;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body bgcolor="cyan">
+    <div class="container">
+      <h1>LOGIN FORM</h1>
+      <form action="dataprint.html">
+        <table>
+          <tr>
+            <td>
+              <label for="username">Name:</label
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="text" id="num1" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="phone">Contact:</label>&nbsp;&nbsp;&nbsp;
+              <input type="number" id="num2" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="password">Password:</label>
+              <input type="password" id="num3" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="confirm">Confirm Password:</label>
+              <input type="password" id="num4" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="submit" value="Submit" onclick="working()" />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+    <script>
+      function working() {
+        let a = document.getElementById("num1").value;
+        let b = document.getElementById("num2").value;
+        let c = document.getElementById("num3").value;
+        let d = document.getElementById("num4").value;
+
+        if (a == "" || b == "" || c == "" || d == "") {
+          alert("Please Enter Username Proper");
+          return true;
+        } else if (b < b.lenght || b > b.lenght) {
+          alert("Please Enter Contact Proper");
+          return true;
+        } else if (c != d) {
+          alert("Please Enter Password Proper");
+          return true;
+        } else {
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>

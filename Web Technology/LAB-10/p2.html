@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student</title>
+    <style>
+       body{
+        background-color: rgba(44, 151, 108, 0.478);
+        margin: 0px;
+        padding: 0px;
+      }
+      img {
+        padding: 10px;
+        height: 370px;
+        width: 350px;
+      }
+      .main {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px;
+        padding-left: 20px;
+        padding-right: 20px
+      }
+      .card{
+        flex: 25%;
+        border-radius: 15px;
+        border: 3px solid black;
+        margin: 5px;
+        text-align: center;
+
+      }
+      .name
+      {
+        font-size: 2rem;
+        margin-bottom: 10px;
+      }
+      p {
+        font-style: normal;
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+        text-align: left;
+        padding-left: 15px;
+        }
+    </style>
+  </head>
+  <body>
+    <script>
+      let students = [
+        {
+          StudentId: 1,
+          StudentName: "KATHAN LUNAGARIYA",
+          StudentCourse: "BTech.(CSE)",
+          StudentYear: "2021",
+          StudentEnrollnment: 190540107121,
+          StudentImage:
+            "https://du-website.s3.ap-south-1.amazonaws.com/U01/Student-Photo/190540107121---11-05-2022-10-07-57.JPG",
+        },
+        {
+          StudentId: 2,
+          StudentName: "Dr. Pradyumansinh Jadeja",
+          StudentCourse: "BTech.(CSE)",
+          StudentYear: "2022",
+          StudentEnrollnment: 190540107007,
+          StudentImage:
+            "https://du-website.s3.ap-south-1.amazonaws.com/U01/Student-Photo/190540107007---11-05-2022-10-47-38.JPG",
+        },
+        {
+          StudentId: 3,
+          StudentName: "MIRAL SANGANI",
+          StudentCourse: "BTech.(CSE)",
+          StudentYear: "2020",
+          StudentEnrollnment: 190540107181,
+          StudentImage:
+            "https://du-website.s3.ap-south-1.amazonaws.com/U01/Student-Photo/190540107181---22-06-2022-04-13-35.JPG",
+        },
+        {
+          StudentId: 4,
+          StudentName: "AYUSHI KANSARA",
+          StudentCourse: "MBA",
+          StudentYear: 2020,
+          StudentEnrollnment: 21041001007,
+          StudentImage:
+            "https://du-website.s3.ap-south-1.amazonaws.com/U01/Student-Photo/21041001007---16-02-2023-10-55-12.jpg",
+        },
+        {
+          StudentId: 5,
+          StudentName: "UMANG MEVA",
+          StudentCourse: "MBA",
+          StudentYear: 2023,
+          StudentEnrollnment: 21041001010,
+          StudentImage:
+            "https://du-website.s3.ap-south-1.amazonaws.com/U01/Student-Photo/21041001010---16-02-2023-10-57-45.jpg",
+        },
+        {
+          StudentId: 6,
+          StudentName: "DHRUVI DHARSANDIYA",
+          StudentCourse: "MBA",
+          StudentYear: 2023,
+          StudentEnrollnment: 21041001004,
+          StudentImage:
+            "https://du-website.s3.ap-south-1.amazonaws.com/U01/Student-Photo/21041001004---16-02-2023-10-52-30.jpg",
+        },
+        {
+          StudentId: 7,
+          StudentName: "VIBHABEN BHIMANEE",
+          StudentCourse: "MCA",
+          StudentYear: 2020,
+          StudentEnrollnment: 21030501002,
+          StudentImage:
+            "https://du-website.s3.ap-south-1.amazonaws.com/U01/Student-Photo/21030501002---27-02-2023-08-28-01.jpg",
+        },
+        {
+          StudentId: 8,
+          StudentName: "SIDDHARTH RASADIYA",
+          StudentCourse: "MCA",
+          StudentYear: 2019,
+          StudentEnrollnment: 21030501018,
+          StudentImage:
+            "https://du-website.s3.ap-south-1.amazonaws.com/U01/Student-Photo/21030501018---06-10-2022-10-42-44.JPG",
+        },
+        {
+          StudentId: 9,
+          StudentName: "BHARAT PARMAR",
+          StudentCourse: "MCA",
+          StudentYear: 2024,
+          StudentEnrollnment: 21030501006,
+          StudentImage:
+            "https://du-website.s3.ap-south-1.amazonaws.com/U01/Student-Photo/21030501017---06-10-2022-10-39-47.JPG",
+        },
+        {
+          StudentId: 10,
+          StudentName: "IKSHIKA CHOTAI",
+          StudentCourse: "BTech (CSE)",
+          StudentYear: 2018,
+          StudentEnrollnment: 190540107030,
+          StudentImage:
+          "https://du-website.s3.ap-south-1.amazonaws.com/U01/Student-Photo/190540107030---11-05-2022-10-25-24.JPG",
+        },
+        {
+          StudentId: 11,
+          StudentName: "JAHNAVI DARANIA",
+          StudentCourse: "BTech (CSE)",
+          StudentYear: 2019,
+          StudentEnrollnment: 190540107039,
+          StudentImage:
+            "https://du-website.s3.ap-south-1.amazonaws.com/U01/Student-Photo/190540107039---11-05-2022-11-07-14.JPG",
+        },
+        {
+          StudentId: 12,
+          StudentName: "JAYKUMAR MANSURIYA",
+          StudentCourse: "BTech (CSE)",
+          StudentYear: 2021,
+          StudentEnrollnment: 190540107131,
+          StudentImage:
+            "https://du-website.s3.ap-south-1.amazonaws.com/U01/Student-Photo/190540107131---11-05-2022-10-56-05.JPG",
+        },
+      ];
+
+      document.write("<div class='main'>");
+      for (stu of students) {
+        document.write("<div class='card'>");
+        document.write('<img src = "' + stu.StudentImage + '"></img>');
+        document.write("<p  class = 'name'><b>" + stu.StudentName + "</b></p>");
+        document.write("<p>" + stu.StudentEnrollnment + "</p>");
+        document.write("<p> Student Course: " + stu.StudentCourse + "</p>");
+        document.write(
+          "<p> Student Year: " + stu.StudentYear + "</p>"
+        );
+        document.write("</div>")
+      }
+      document.write("</div>");
+    </script>
+  </body>
+</html>

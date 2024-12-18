@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <title>
+        1st Program
+    </title>
+</head>
+
+<body>
+
+    <script>
+        let num1 = parseInt(prompt("Enter 1st Value"));
+        let operation = prompt("Select Operator + - * / %");
+        let num2 = parseInt(prompt("Enter 2nd Value"));
+        let result;
+        switch (operation) {
+            case '+':
+                result = num1 + num2;
+                document.write(result);
+                break;
+
+            case '-':
+                result = num1 - num2;
+                document.write(result);
+                break;
+
+            case '*':
+                result = num1 * num2;
+                document.write(result);
+                break;
+
+            case '/':
+                result = num1 / num2;
+                document.write(result);
+                break;
+
+            case '%':
+                result = num1 % num2;
+                document.write(result);
+                break;
+
+            default:
+                document.write("Invalid Choice:")
+                break;
+        }
+
+    </script>
+</body>
+
+</html>

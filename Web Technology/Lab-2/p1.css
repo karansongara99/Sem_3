@@ -1,0 +1,12 @@
+h1{
+    color: black;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: aqua;
+    border-radius: 5%;
+    border: 2px solid black;
+}
+
+img{
+    float: right;
+}

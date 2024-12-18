@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Click To Paragraph</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <button id="clicktopara" onclick="changeText()">Click ME!!!</button>
+    <p id="myParagraph">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, sit,
+      tempore doloremque a reiciendis aperiam hic molestias earum cum totam quia
+      soluta dolorem ut quaerat saepe modi minima pariatur maiores.
+    </p>
+    <script>
+      $(document).ready(function () {
+        $("#clicktopara").click(function () {
+          $("#myParagraph").css("background-color", "cyan");
+          $("#myParagraph").text("I AM KARAN SONGARA");
+        });
+      });
+    </script>
+  </body>
+</html>

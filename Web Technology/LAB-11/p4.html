@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <center>
+      <form>
+        <table>
+          <tr>
+            <td>UserName:</td>
+            <td>
+              <input type="text" id="uname" />
+              <label id="luser" style="color: red; visibility: hidden"></label>
+            </td>
+          </tr>
+          <tr>
+            <td>Password:</td>
+            <td>
+              <input type="password" id="password" />
+              <label
+                id="lpassword"
+                style="color: indianred; visibility: hidden"
+              ></label>
+            </td>
+          </tr>
+          <tr>
+            <td>Confirm Password:</td>
+            <td>
+              <input type="password" id="confirmpassword" />
+              <label
+                id="lpassword"
+                style="color: indianred; visibility: hidden"
+              ></label>
+            </td>
+          </tr>
+          
+          <tr>
+            <td>Age:</td>
+            <td>
+              <input type="text" id="age" />
+              <label
+                id="lage"
+                style="color: indianred; visibility: hidden"
+              ></label>
+            </td>
+          </tr>
+          <tr>
+            <td>Enrollnment:</td>
+            <td>
+              <input type="text" id="enrollnment" />
+              <label
+                id="lenrollnment"
+                style="color: indianred; visibility: hidden"
+              ></label>
+            </td>
+          </tr>
+          <tr></tr>
+            <td>Email:</td>
+            <td>
+              <input type="email" id="email" />
+              <label
+                id="lemail"
+                style="color: indianred; visibility: hidden"
+              ></label>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="button" value="Submit" onclick="validate()" /></td>
+          </tr>
+        </table>
+      </form>
+    </center>
+    <script>
+    function validate() {
+        var UserName = document.getElementById("uname").value;
+        var Password = document.getElementById("password").value;
+        var ConfirmPassword = document.getElementById("confirmpassword").value;
+        var Age = document.getElementById("age").value;
+        var Enrollnment = document.getElementById("enrollnment").value;
+        var Email = document.getElementById("email").value;
+
+        var userregx = /^[a-zA-Z0-9]+[a-zA-Z0-9]$/;
+        var passwordregx = /^[a-zA-Z0-9]{8,}$/;
+        var ageregx = /^[0-9]{0,18}$/;
+        var enrollnmentregx  = /^[0-9]{0,11}/;
+        var emailregx = /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,4}$/;
+
+        //Username
+
+        if (userregx.test(UserName)) {
+          document.getElementById("uname").style.backgroundColor = "lightgreen";
+          document.getElementById("luser").style.visibility = "hidden";
+        }
+        else
+        {
+            document.getElementById("uname").style.backgroundColor = "red";
+            document.getElementById("luser").style.visibility = "visible";
+            document.getElementById("luser").innerHTML = "Invalid Username";
+        }
+
+        //Password
+
+        if (passwordregx.test(Password)) {
+                document.getElementById("password").style.backgroundColor = "lightgreen";
+                document.getElementById("lpassword").style.visibility = "hidden";
+        } 
+        else {
+                document.getElementById("password").style.backgroundColor =
+                  "red";
+                document.getElementById("lpassword").style.visibility =
+                  "visible";
+                document.getElementById("lpassword").innerHTML =
+                  "Invalid Password";
+        }
+
+        //Age
+
+        if(ageregx.text(Age))
+        {
+            document.getElementById("age").style.backgroundColor = "lightgreen";
+            document.getElementById("lage").style.visibility = "hidden";
+        }
+        else
+        {
+            document.getElementById("age").style.backgroundColor = "red";
+            document.getElementById("lage").style.visibility = "visible";
+            document.getElementById("lage").innerHTML = "Invalid Age";
+        }
+
+        //Enrollnment
+
+        if(enrollnmentregx.test(Enrollnment))
+        {
+            document.getElementById("enrollnment").style.backgroundColor = "lightgreen";
+            document.getElementById("lenrollnment").style.visibility = "hidden";
+        }
+        else
+        {
+            document.getElementById("enrollnment").style.backgroundColor = "red";
+            document.getElementById("lenrollnment").style.visibility = "visible";
+            document.getElementById("lenrollnment").innerHTML = "Invalid Enrollnment";
+        }
+
+        //Email
+
+        if (emailregx.test(Email)) {
+            document.getElementById("email").style.backgroundColor = "lightgreen";
+            document.getElementById("lemail").style.visibility = "hidden";
+        }
+        else {
+            document.getElementById("email").style.backgroundColor = "red";
+            document.getElementById("lemail").style.visibility = "visible";
+            document.getElementById("lemail").innerHTML = "Invalid Email";
+        }
+    }
+    </script>
+  </body>
+</html>

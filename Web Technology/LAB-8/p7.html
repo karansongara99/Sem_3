@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let word = prompt("Enter Word:")
+
+        let firstpos = word.indexOf("a")
+        let lastpos = word.lastIndexOf("a")
+
+        if (firstpos == -1 || lastpos == -1 || firstpos == lastpos) {
+            document.write("Not Found")
+        }
+        else {
+            document.write("Word:" + word)
+            document.write("<br>")
+            document.write("FistPos:" + firstpos)
+            document.write("<br>")
+            document.write("Lastpos:" + lastpos)
+            document.write("<br>")
+            document.write(word.substring(firstpos+1,lastpos))
+        }
+    </script>
+</body>
+
+</html>

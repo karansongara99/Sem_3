@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Practical-2</title>
+  <style>
+    body {
+      margin: 10px;
+      padding: 20px;
+    }
+
+    tr,
+    td {
+      padding: 2%;
+      font-weight: 400;
+    }
+
+    label {
+      font-weight: 400;
+    }
+
+    #btn {
+      
+      background-color: rgb(120, 206, 28);
+    }
+
+    #btn:hover {
+      color: rgb(21, 83, 184);
+    }
+
+    fieldset {
+      border: 2px solid black;
+    }
+  </style>
+</head>
+
+<body bgcolor="lightcyan">
+  <center>
+    <fieldset>
+      <legend>COVID-19 Vaccine Registration Form</legend>
+      <form action="get">
+        <table>
+          <tr>
+            <td><label>First Name:</label></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td><label>Last Name:</label></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td><label>Enter Addhar No:</label></td>
+            <td><input type="text" maxlength="12" /></td>
+          </tr>
+          <tr>
+            <td><label>Vaccine Name:</label></td>
+            <td>
+              <select name="vaccine-names" id="vaccine-names">
+                <option value="Select Your Vaccine Name" disabled selected>
+                  Select Your Vaccine Name
+                </option>
+                <option value="bca">Covisheld</option>
+                <option value="btech">Covaccine</option>
+                <!-- <option value="bsc">Cosheft</option>
+                  <option value="diploma">Covacc</option> -->
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Vaccination Center Name:</label></td>
+            <td>
+              <select name="city-names" id="city-names">
+                <option value="Select Your Vaccination Center Name" disabled selected>
+                  Select Your Vaccination Center Name
+                </option>
+                <option value="arrogya-kendra">Arrorgya Kendra</option>
+                <!-- <option value="morbi">B.TECH</option>
+                  <option value="surat">B.SC</option>
+                  <option value="diploma">DIPLOMA</option> -->
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Date of Dose:</label></td>
+            <td><input type="date" /></td>
+          </tr>
+          <tr>
+            <td><label>Dose Number:</label></td>
+            <td><input type="text" maxlength="6" /></td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="button" value="Click Here" id="btn" />&nbsp;&nbsp;&nbsp;
+              <input type="button" value="Cancel" id="btn" />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </fieldset>
+  </center>
+</body>
+
+</html>

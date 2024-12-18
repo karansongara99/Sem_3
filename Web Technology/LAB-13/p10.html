@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Mouse Left Click</h2>
+    <button onclick="leftclick()">Left</button>
+    <p id="left"></p>
+    <br />
+    <hr />
+    <br />
+    <h2>Mouse Right Click</h2>
+    <button onclick="rightclick()">Right</button>
+    <p id="right"></p>
+    <script>
+      function leftclick() {
+        document.getElementById("left").innerHTML = "Left click";
+        document.getElementById("left").style.backgroundColor = "cyan";
+      }
+
+      function rightclick() {
+        document.getElementById("right").innerHTML = "Right click";
+        document.getElementById("right").style.backgroundColor = "yellow";
+      }
+    </script>
+  </body>
+</html>

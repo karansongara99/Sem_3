@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product</title>
+    <style>
+       body{
+        background-color: rgba(44, 151, 108, 0.478);
+        margin: 0px;
+        padding: 0px;
+      }
+      img {
+        padding: 10px;
+        height: 370px;
+        width: 350px;
+      }
+      .main {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px;
+        padding-left: 20px;
+        padding-right: 20px
+      }
+      .card{
+        flex: 25%;
+        border-radius: 15px;
+        border: 3px solid black;
+        margin: 5px;
+        text-align: center;
+
+      }
+      .name
+      {
+        font-size: 2rem;
+        margin-bottom: 10px;
+      }
+      p {
+        font-style: normal;
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+        text-align: left;
+        padding-left: 15px;
+        }
+    </style>
+  </head>
+  <body>
+    <script>
+      let products = [
+        {
+          ProductId: 1,
+          ProductName: "Google Pixel 7 Pro",
+          ProductCategory: "Smart Phone",
+          ProductPrice: 45000,
+          ProductImage:
+            "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/z/g/q/-original-imaggsueh4b26fj7.jpeg?q=70&crop=false",
+        },
+        {
+          ProductId: 2,
+          ProductName: "Fastrack Limitless Glide",
+          ProductCategory: "Smart Watch",
+          ProductPrice: 2000,
+          ProductImage:
+            "https://m.media-amazon.com/images/I/41tps1-sn4L._SX300_SY300_QL70_FMwebp_.jpg",
+        },
+        {
+          ProductId: 3,
+          ProductName: "Apple 2023 MacBook Pro",
+          ProductCategory: "Laptop",
+          ProductPrice: 350000,
+          ProductImage:
+            "https://m.media-amazon.com/images/I/31paoJTwAdL._SY445_SX342_QL70_FMwebp_.jpg",
+        },
+        {
+          ProductId: 4,
+          ProductName: "boAt Stone 352 Bluetooth Speaker",
+          ProductCategory: "Speaker",
+          ProductPrice: 1500,
+          ProductImage:
+            "https://m.media-amazon.com/images/I/81u3Omfqv9L._SX679_.jpg",
+        },
+        {
+          ProductId: 5,
+          ProductName: "Samsung Galaxy Tab S6 Lite",
+          ProductCategory: "Tablet",
+          ProductPrice: 23000,
+          ProductImage:
+            "https://m.media-amazon.com/images/I/41n9rbccFqL._SX300_SY300_QL70_FMwebp_.jpg",
+        },
+        {
+          ProductId: 6,
+          ProductName: "Noise Buds VS104 Truly",
+          ProductCategory: "EarBuds",
+          ProductPrice: 2000,
+          ProductImage:
+            "https://m.media-amazon.com/images/I/311qIs7vzfL._SX300_SY300_QL70_FMwebp_.jpg",
+        },
+      ];
+
+      document.write("<div class='main'>");
+      for (pro of products) {
+        document.write("<div class='card'>");
+        document.write('<img src = "' + pro.ProductImage + '"></img>');
+        document.write("<p  class = 'name'><b>" + pro.ProductName + "</b></p>");
+        document.write("<p> Price: " + pro.ProductPrice + "</p>");
+        document.write("<p> Category: " + pro.ProductCategory + "</p>");
+        document.write("</div>")
+      }
+      document.write("</div>");
+    </script>
+  </body>
+</html>

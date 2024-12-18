@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array And Object</title>
+  </head>
+  <body>
+    <script>
+      let person = {
+        name: "Karan",
+        country: "India",
+        friends: [" Bhavya ", " Gaurav ", " Khush "],
+      };
+
+      let { name: foo, friends: bar } = person;
+
+      document.write("Name: " + foo + "<br>");
+      document.write("Friends:  " + bar);
+    </script>
+  </body>
+</html>
