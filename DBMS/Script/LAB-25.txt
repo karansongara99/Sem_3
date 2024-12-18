@@ -1,0 +1,79 @@
+--------------------------------------PART - A----------------------------------------
+
+1.db.STUDENT.aggregate([{ $lookup : { from  : "RESULT" , localField : "RNO" , foreignField : "RNO" , as : "studentResult" } }])
+2.db.STUDENT.aggregate([{ $lookup : { from  : "RESULT" , localField : "RNO" , foreignField : "RNO" , as :
+ "studentResult" } }, { $unwind : "$studentResult" }, { $project : { Rno : 1 , Name : 1 , Branch : 1 , SPI : "$studentResult.SPI" } }])
+3.db.STUDENT.aggregate([
+{ $lookup : { from  : "RESULT" , localField : "RNO" , foreignField : "RNO" , as :
+ "studentResult" }}, 
+  { $match : { Branch : "CE" }},
+{ $unwind : "$studentResult" }, 
+{ $project : { Rno : 1 , Name : 1 , Branch : 1 , SPI : "$studentResult.SPI" }}
+])
+4.db.STUDENT.aggregate([
+{ $lookup : { from  : "RESULT" , localField : "RNO" , foreignField : "RNO" , as :
+ "studentResult" }}, 
+  { $match : { Branch : "EC" }},
+{ $unwind : "$studentResult" }, 
+{ $project : { Rno : 1 , Name : 1 , Branch : 1 , SPI : "$studentResult.SPI" }}
+])
+5.db.STUDENT.aggregate([
+  { $lookup : { from  : "RESULT" , localField : "RNO" , foreignField : "RNO" , as :"studentResult" }}, 
+  { $unwind: "$studentResult" },
+  { $group: { _id: "$Branch", averageSPI: { $avg: "$studentResult.SPI" }}},
+  ])
+6.db.STUDENT.aggregate([
+  { $lookup : { from  : "RESULT" , localField : "RNO" , foreignField : "RNO" , as :"studentResult" }}, 
+  { $unwind: "$studentResult" },
+  { $group: { _id: "$Branch", averageSPI: { $avg: "$studentResult.SPI" }}},
+  { $sort : { SPI : 1 } }
+])
+7.db.STUDENT.aggregate([
+  { $lookup : { from  : "RESULT" , localField : "RNO" , foreignField : "RNO" , as :"studentResult" }}, 
+  { $unwind: "$studentResult" },
+  { $match : { Branch : { $in : ["CE","ME"] } }},
+  { $group: { _id: "$Branch", averageSPI: { $avg: "$studentResult.SPI" }}},
+])
+8.db.STUDENT.aggregate([
+  { $lookup : { from  : "RESULT" , localField : "Rno" , foreignField : "Rno" , as :"studentResult" }}, 
+  { $unwind: "$studentResult" },
+	{ $project: { Rno: 1, Name: 1, Branch: 1, studentResult: 1}}	
+])
+9.db.STUDENT.aggregate([
+  { $lookup : { from  : "RESULT" , localField : "Rno" , foreignField : "Rno" , as :"studentResult" }}, 
+  { $unwind: "$studentResult" },
+	{ $project: { Rno: 1, Name: 1, Branch: 1, studentResult: 1, SPI : "#studentResult.SPI"}}	
+])
+10.db.EMPLOYEE25.aggregate([
+  {
+    $lookup: {
+      from: "EMPLOYEE25",
+      localField: "EmployeeNo",
+      foreignField: "ManagerNo",
+      as: "Manager"
+    }
+  },
+  {$project: {employeeName: "$Name",managerName: "$Manager.Name"}}])
+
+
+--------------------------------------PART - B -----------------------------------------
+
+11.
+12.
+13.
+14.
+15.
+16.
+17.
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------PART - C ---------------------------------------

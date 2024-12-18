@@ -1,0 +1,36 @@
+--------------------------------------PART - A----------------------------------------
+
+1.db.DEPOSIT.find()
+2.db.BORROW.find()
+3.db.CUSTOMER.find()
+4.db.BORROW.insertOne()
+5.db.DEPOSIT.find({},{ ACTNO : 1 , CNAME : 1 , AMOUNT : 1})
+6.db.BORROW.find({},{ LOANNO : 1 , AMOUNT : 1 })
+7. db.BORROW.find({"BNAME" : "ANDHERI"} , {LOANNO : 1 , CNAME : 1, BNAME : 1})
+8.db.DEPOSIT.find( { ACTNO : {$eq : 106}} , { ACTNO : 1 , AMOUNT : 1 })
+9.db.BORROW.find( { AMOUNT : {$gt : 5000}} , { CNAME : 1})
+10.db.DEPOSIT.find( { ADATE : {$gt : "1-12-96"}} , { CNAME : 1})
+
+
+
+--------------------------------------PART - B -----------------------------------------
+
+11.
+12.
+13.
+14.
+15.
+16.
+17.
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------PART - C ---------------------------------------

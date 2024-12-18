@@ -1,0 +1,36 @@
+LAB-16
+
+-------------------------------A-------------------------
+
+1. db.DEPOSIT.find()
+2. db.DEPOSIT.find().pretty()
+3. db.DEPOSIT.findOne({ "ACTNO": 9 });
+4. db.DEPOSIT.insertOne({})
+5. db.DEPOSIT.insertMany([{}])
+6. db.DEPOSIT.find({}, { CNAME: 1, BNAME: 1, AMOUNT: 1 });
+7. db.Deposit.find().sort({ CNAME: 1 })
+8. db.Deposit.find().sort({ CNAME: -1 })
+9. db.Deposit.find().sort({ ACTNO: 1, AMOUNT: -1 })
+10.db.deposit.find().limit(2)
+11.db.deposit.find().skip(2).limit(1)
+12.db.deposit.find().skip(5).limit(2)
+13.db.countDocument()
+14.db.deposit.find().limit(2)
+15.db.Deposit.find().sort({ AMOUNT: -1 })
+
+
+---------------------------B--------------------------------
+
+1.db.DEPOSIT.insertOne({})
+2.db.deposit.find().skip(8).limit(1)
+3.db.deposit.find().skip(10).limit(2)
+
+
+------------------------C----------------------------------
+
+1.db.Deposit.find().sort({ AMOUNT : 1 ,   BNAME : -1 })
+2.db.deposit.find().limit(5)
+3.db.deposit.drop()
+4.db.dropDatabase()
+
+

@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Alice",
+    "department": "HR",
+    "salary": 50000,
+    "address": {
+      "add1": "123 Main Street",
+      "add2": "Apartment 1",
+      "add3": "Building A",
+      "city": "New York",
+      "pincode": 10001
+    }
+  },
+  {
+    "name": "Bob",
+    "department": "Finance",
+    "salary": 60000,
+    "address": {
+      "add1": "456 Oak Road",
+      "add2": "Suite 201",
+      "add3": "Building B",
+      "city": "San Francisco",
+      "pincode": 94105
+    }
+  },
+  {
+    "name": "Charlie",
+    "department": "IT",
+    "salary": 75000,
+    "address": {
+      "add1": "789 Pine Avenue",
+      "add2": "Unit 3B",
+      "add3": "Building C",
+      "city": "Los Angeles",
+      "pincode": 90001
+    }
+  },
+  {
+    "name": "David",
+    "department": "Marketing",
+    "salary": 55000,
+    "address": {
+      "add1": "101 Maple Lane",
+      "add2": "Floor 2",
+      "add3": "Building D",
+      "city": "Chicago",
+      "pincode": 60601
+    }
+  },
+  {
+    "name": "Eva",
+    "department": "Sales",
+    "salary": 65000,
+    "address": {
+      "add1": "202 Birch Street",
+      "add2": "Apartment 4",
+      "add3": "Building E",
+      "city": "Seattle",
+      "pincode": 98101
+    }
+  },
+  {
+    "name": "Frank",
+    "department": "Engineering",
+    "salary": 80000,
+    "address": {
+      "add1": "303 Cedar Road",
+      "add2": "Unit 5A",
+      "add3": "Building F",
+      "city": "Austin",
+      "pincode": 73301
+    }
+  },
+  {
+    "name": "Grace",
+    "department": "Legal",
+    "salary": 70000,
+    "address": {
+      "add1": "404 Elm Street",
+      "add2": "Suite 310",
+      "add3": "Building G",
+      "city": "Boston",
+      "pincode": 02215
+    }
+  },
+  {
+    "name": "Henry",
+    "department": "Operations",
+    "salary": 72000,
+    "address": {
+      "add1": "505 Willow Road",
+      "add2": "Apartment 9",
+      "add3": "Building H",
+      "city": "Denver",
+      "pincode": 80202
+    }
+  },
+  {
+    "name": "Ivy",
+    "department": "R&D",
+    "salary": 78000,
+    "address": {
+      "add1": "606 Pinehill Drive",
+      "add2": "Floor 4",
+      "add3": "Building I",
+      "city": "Dallas",
+      "pincode": 75201
+    }
+  },
+  {
+    "name": "Jack",
+    "department": "Customer Support",
+    "salary": 48000,
+    "address": {
+      "add1": "707 Oakwood Street",
+      "add2": "Unit 2B",
+      "add3": "Building J",
+      "city": "Miami",
+      "pincode": 33101
+    }
+  }
+]

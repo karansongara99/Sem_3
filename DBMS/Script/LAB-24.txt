@@ -1,0 +1,35 @@
+--------------------------------------PART - A----------------------------------------
+
+1.db.EMPLOYEE24.aggregate([{$group: {_id: null,Maximum: { $max: "$Salary" },Minimum: { $min: "$Salary" },Total_Sal: { $sum: "$Salary" },Average_Sal: { $avg: "$Salary" }}}])
+2.db.EMPLOYEE24.aggregate([{ $count: "totalEmployees" }])
+3.db.EMPLOYEE24.aggregate([{$match: {Department: "IT"}},{$group: {_id: null,MaxSalary: { $max: "$Salary" }}}])
+4.db.EMPLOYEE24.aggregate([{ $group: { _id: "$City" } },{ $count: "uniqueCitiesCount" }])
+5.db.EMPLOYEE24.aggregate([{$group: {_id: "$city",totalEmployees: { $sum: 1 }}}])
+6.db.EMPLOYEE24.aggregate([{ $group: {_id: "$city",totalEmployees: { $sum: 1 }}}, {$match: {totalEmployees: { $gt: 1 }}}])
+7.
+8.
+9.
+10.
+
+
+--------------------------------------PART - B -----------------------------------------
+
+11.
+12.
+13.
+14.
+15.
+16.
+17.
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------PART - C ---------------------------------------
