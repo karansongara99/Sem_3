@@ -1,6 +1,6 @@
 <h1>DBMS</h1>
 
-<p>SQL Server</p>
+<p>MSSQL Server</p>
 <p>A programming language that allows users to store, update, search, and retrieve data in a relational database. SQL is used to manage databases and query the data they contain.</p>
 
 <p>MongoDB</p>
